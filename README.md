@@ -1,15 +1,18 @@
-# Mesh Hollow
+# Mapleash Resort · Virtual Tour
 
-A concept landing page where the whole site is one low-poly 3D island, built with three.js (r128).
-Scrolling flies the camera between five stops: island, work, studio, process and contact.
-You can step inside the studio house: the door opens, the camera walks in, and you can look around a furnished room with a 1:45 model of the island.
-A day/dusk toggle (which also follows the system color scheme) relights the scene.
+A 3D virtual tour website for Mapleash Resort, Wayanad, Kerala, built with three.js (r128).
+Scrolling walks the camera through the resort: arrival courtyard and reception pavilion, the
+infinity pool and kids' area, the cottages, and a plan-your-visit stop. Guests can step inside
+a cottage room (four-poster bed, in-room jacuzzi, forest window) and look around.
+Each stop links to a real photo of the resort. A Daytime/Evening switch relights the scene.
 
-The studio, clients and email address are fictional placeholders.
+## Editing resort details
+
+Open `index.html` and edit the `RESORT` object near the top of the script:
+`phone`, `whatsapp` and `email` rows appear on the Visit stop as soon as they are filled in.
+Photos live in `images/`.
 
 ## Run locally
-
-Open `index.html` in a browser, or serve the folder:
 
 ```bash
 python3 -m http.server 8000
@@ -17,4 +20,8 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Deployed with GitHub Pages from the `main` branch root.
+Served by GitHub Pages from the `gh-pages` branch. Push changes with:
+
+```bash
+git push origin main main:gh-pages
+```
